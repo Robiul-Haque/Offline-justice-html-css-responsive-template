@@ -134,9 +134,9 @@
     background-color: #996633;
 }
 
-/* body sectuion */
+/* body section */
 /* legal-practice-section */
-.legal-practice-header{
+.legal-practice-header {
     text-align: center;
     margin: 80px auto;
     width: 40%;
@@ -151,26 +151,57 @@
 .txt {
     margin-top: 10px;
     color: #707070;
+    font-size: 13px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    row-gap: 20px;
-    padding: 50px;
     justify-items: center;
+    width: 75.5%;
+    margin: 0 auto;
 }
 
 .grid-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 20px;
-    padding: 20px 100px;
     text-align: center;
+    padding: 0 60px;
+    height: 450px;
 }
 
-.grid-item > img {
+.grid-item > h3 {
+    color: #414040;
+}
+
+.grid-item > p {
+    color: #707070;
+    font-size: 13px;
+}
+
+.item-1, .item-3 {
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.item-2 {
+    border: 1px solid #E7E7E7;
+    background: linear-gradient(to bottom, #F3F3F3, #f3f3f3b4, #f3f3f300);
+}
+
+.item-5 {
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7;
+}
+
+.item-img {
+    width: 50px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.item-icon {
     width: 70px;
     height: 70px;
     margin: 0 auto;
