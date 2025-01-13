@@ -209,22 +209,26 @@
 }
 
 /* FAQ section */
+.faq-section {
+    margin-bottom: 80px;
+}
+
 .faq-header {
     text-align: center;
     margin: 80px auto;
     width: 40%;
 }
 
-.faq-header>h2 {
+.faq-h2 {
     color: #414040;
+    font-size: 30px;
+    font-weight: 800;
 }
 
-.faq-header>p {
+.faq-txt {
     color: #707070;
-}
-
-.faq-header>p {
     padding-top: 14px;
+    font-size: 13px;
 }
 
 .faq-body {
@@ -250,8 +254,13 @@
     padding-bottom: 15px;
 }
 
+.first-colmun-h3 {
+    font-weight: 800;
+}
+
 .first-colmun-txt {
     padding-right: 30px;
+    font-size: 13px;
 }
 
 .faq-first-colmun>div {
@@ -273,43 +282,89 @@
 #footer {
     display: flex;
     justify-content: center;
-    column-gap: 60px;
+    column-gap: 100px;
     align-items: start;
     background-color: #212121;
-    padding: 20px;
     color: white;
-    padding: 60px 100px;
+    padding: 80px 140px;
+}
+
+.col-1-txt,
+.col-2-menu,
+.col-3-txt,
+.col-4-txt {
+    color: #CFCFCF;
 }
 
 .col-1 {
-    width: 25%;
-}
-
-.col-1>p {
-    margin-top: 10px;
-}
-
-.col-2 {
-    width: 30%;
-}
-
-.col-2>ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-.col-3 {
     width: 35%;
 }
 
-.col-3>p {
+.col-1-txt {
     margin-top: 10px;
+    font-size: 13px;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-2-h3 {
+    font-weight: 800;
+}
+
+.col-2-menu {
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-3-h3 {
+    font-weight: 800;
+}
+
+.col-3-txt {
+    margin-top: 10px;
+    font-size: 13px;
 }
 
 .col-4 {
-    width: 15%;
+    width: 20%;
 }
 
-.col-4>p {
+.col-4-h3 {
+    font-weight: 800;
+}
+
+.col-4-txt {
     margin: 10px 0;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.input-group>input[type="email"] {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 300px;
+}
+
+.input-group>input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: #b68c5a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all ease;
 }
