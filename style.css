@@ -45,6 +45,10 @@
     margin: 50px 0;
 }
 
+.menu-icon {
+    display: none;
+}
+
 #nav-list {
     display: flex;
     column-gap: 40px;
@@ -367,4 +371,66 @@
     color: white;
     cursor: pointer;
     transition: 0.3s all ease;
+}
+
+
+/* Laptop screen */
+@media only screen and (max-width: 1024px) {}
+
+/* Tab screen */
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* Mobile screen */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-list {
+        display: none;
+    }
+
+    .hero-section {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px;
+        background-position: right;
+    }
+
+    .hero-section>h1 {
+        font-size: 26px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .legal-practice-header {
+        width: 80%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item {
+        padding: 0 20px;
+    }
+
+    .item-1,
+    .item-3 {
+        border-bottom: none;
+    }
+
+    .item-2 {
+        border: none;
+        background: none;
+    }
+
+    .item-5 {
+        border-left: none;
+        border-right: none;
+    }
 }
